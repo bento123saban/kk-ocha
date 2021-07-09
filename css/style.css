@@ -1,8 +1,19 @@
 :root {
   
 }
+::placeholder {
+  color: #045bb388;
+}
 * {
   box-sizing: border-box;
+}
+input {
+  font-size: 1rem;
+}
+button, a {
+  cursor: pointer !important;
+  outline: none !important;
+  text-decoration: none !important;
 }
 
 .img {
@@ -19,112 +30,563 @@ body {
 nav.navbar {
   position: fixed;
   top: 0;
+  padding: 0;
   width: 100%;
   z-index: 4;
+  background: rgba(0,0,0,.5);
   backdrop-filter: blur(5px);
   transition: all .4s ease-in-out;
 }
-.navbar-nav {
+a.navbar-brand {
+  margin:0;
+  padding: 0;
+  color: white;
+}
+.navbar-toggler {
+  height: 35px;
+  width: 40px;
+  margin: 5px;
+  padding: 0;
+  background: rgba(0,0,0,.1);
+  box-shadow: none;
+}
+.navbar-toggler span {
+  color: white;
+}
+.nav-text {
+  color: white;
+}
+.navigasi {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin: auto 0;
 }
-.navbar-nav li {
-  width: 100%;
+.navbar-nav {
+  margin-left: 100px;
 }
-.navbar-nav li a {
-  text-align: left;
-  padding: 5px 10px;
-}
-.navbar-toggler-icon {
-  font-size: 12px;
-  margin: 0;
-}
-.navbar-collapse form button {
-  background-color: rgba(0, 210, 10, .5);
-}
+
+
+
+
+
 
 header {
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-header img.img {
-  
-}
-.contentBox {
-  padding: 40px;
-  margin: 0;
-  width: 100%;
+  overflow: hidden;
+  color:  white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-#carouselExampleCaptions {
-  flex: 1;
-  margin: 0 10px 0 0;
-  padding: 0;
-  background-color: red;
+header span{
+  font-size: 14px;
 }
-.carousel-inner .carousel-item {
-  height: 90vh;
-}
-.carousel-item img {
-  object-fit: cover;
-  object-position: center center;
+header img.header-bg {
+  position: absolute;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(10%);
+  z-index: -1;
+  padding: 0;
+}
+header img.header-logo {
+  position: relative;
+  display: block;
+  margin: 5% auto 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0 0 100px rgba(0,0,0,.5);
+}
+header h5, header h2{
+  text-align: center;
+}
+header p {
+  width: min(600px, 100%);
+  padding: 2px 10px;
+  font-size: 14px;
+  text-align: center;
+}
+header a {
+  padding: 7px 20px;
+  background: linear-gradient(45deg, #FFD700, orange);
+  margin: 5px auto;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+}
+
+
+
+
+
+.contentBox {
+  padding: 70px 40px;
+  margin: 0;
   width: 100%;
 }
 .prod-card {
-  flex: 1.3;
+  flex: 1;
   height: auto;
-  background-color: blue;
   margin: 0 0 0 20px;
   display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.prod-card h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+#produk p.prod-note {
+  text-align: left;
+  font-size: 12px;
+  padding: 3px 40px;
+}
+.prod-card .box {
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 30px auto 2px;
+  border-top: 2px solid #234;
 }
-.prod-card .prod-box {
-  width: 50%;
-}
-.box1, .box4 {
-  background-color: red;
-}
-.box2, .box3 {
-  background-color:yellow;
+.prod-card p.prod-ket {
+  text-align: center;
+  font-size: 1rem;
+  width: min(700px, 100%);
+  margin: 0 auto;
+  padding: 3px 40px;
 }
 
+
+
+
+
+
+.card{
+  position: relative;
+  width: 185px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  padding: 0;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+  border: none !important;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0px 50px rgba(0,0,0,.5);
+}
+.card img {
+  z-index: 0;
+  transition: all .5s ease-in-out;
+  position: absolute;
+}
+.card.card:hover img {
+  height: 80%;
+  filter: brightness(55%);
+}
+.card .text {
+  position: absolute;
+  background: linear-gradient(45deg, #234, );
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  height: 45px;
+  transition: all .5s ease-in-out;
+}
+
+.card:hover .text {
+  height: 90%;
+}
+.card .text .nama {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease-in-out;
+  color: white;
+  font-weight: bold;
+  backdrop-filter: blur(2px);
+  background: rgba(0,0,0,0.3);
+}
+.card:hover .text .nama {
+  backdrop-filter: none;
+  background: none;
+
+}
+.card .text .nama::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 50%;
+  border-top: 1px solid white;
+  transition: all .5s ease-in-out;
+}
+.card:hover .text .nama::before {
+  left: -50%;
+}
+.card .text .nama::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 50%;
+  border-top: 1px solid white;
+  transition: all .5s ease-in-out;
+}
+.card:hover .text .nama::after{
+  right: -50%;
+}
+.card .nama span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  height: 3px;
+  width: 5px;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+.card:hover .nama span{
+  opacity: 0;
+}
+.card .text .desc{
+  background: linear-gradient(45deg, #FFD700, darkorange);
+  width:100%;
+  margin:0;
+  padding: 6px;
+  font-size: 11px;
+  text-align: justify;
+  height: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.card .text .harga{
+  background: greenyellow;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .5s ease-in-out;
+  z-index: 2;
+  transition-delay: .4s;
+}
+.card:hover .text .harga {
+  bottom: -16px;
+  filter: drop-shadow(3px 4px);
+}
+.card .text .harga span.rp {
+  padding: 5px 10px;
+}
+.card .text .harga span.tambah {
+  background-color: white;
+  color: #123;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.card .text .harga span.tambah:active {
+  background-color: #123;
+  color: white;
+  font-weight: bold;
+}
+
+.contentBox {
+  padding: 70px 40px;
+}
+
+
+
+
+
+
 .order-box {
-  padding: 40px;
-  padding-top: 70px;
-  height: 100vh;
+  padding: 70px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(0,0,0,.1);
 }
 .order-box h1 {
   text-align: center;
   text-transform: uppercase;
+  color: #045cb3;
 }
-form.order-form {
-  padding: 30px;
-}
-form.order-form .form-group {
-  margin: 10px 0;
+.order-box .order-container{
+  min-height: 10%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 70%;
+  flex-direction: column;
+  position: relative;
+  width: min(700px, 100%);
+  margin: 0 auto;
 }
-form.order-form .form-group label {
-  flex: 1;
-  font-size: 20px;
+.order-container label{
+  color: #045cb3;
 }
-form.order-form .form-group input, textarea {
-  flex: 3.5;
+
+.order-container .order-input, textarea {
+  position: relative;
   padding: 7px;
-  border-radius: 6px;
-  border: 2px solid black;
-}
-form.order-form button {
-  padding: 6px 15px;
+  padding-left: 10px;
+  margin: 0 0 15px;
+  border: 2px solid #045cb3;
   border-radius: 5px;
+	font-size: 14px;
+  position: relative;
+  outline: none;
+  background-color: transparent; 
+  color: #045cb3;
+}
+.order-container textarea {
+	height: 100px;
+}
+.order-container p.daftar-order {
+  font-size: 1rem;
+  margin: 0 5px;
+  text-decoration: underline;
   text-transform: uppercase;
-  margin: 10px 0 5px 180px;
+  font-weight: bold;
+  color: #045cb3;
+}
+
+
+
+
+
+.order-container .order-pilih {
+  padding: 10px 0 10px 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #045cb3;
+}
+.order-container .order-pilih p {
+  font-size: 14px;
+  margin: 10px auto;
+  text-align: center;
+  color: #045cb3;
+}
+.order-container .order-pilih .order-item{
+  margin: 3px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0;
+  color: #045cb3;
+}
+.order-container .order-pilih .order-item li{
+  flex: 1;
+  color: #045cb3;
+}
+.order-container .order-pilih .order-item input{
+  margin: 0 25px;
+  width: 80px;
+  text-align: center;
+  color: #045cb3;
+  border: 2px solid #045cb3;
+  border-radius: 6px;
+  background: transparent;
+}
+.order-container .order-pilih .order-item i{
+  margin: 0 5px;
+  font-size: 1rem;
+  color: #045cb3;
+}
+
+
+
+
+
+
+.order-container .total-harga {
+  margin: 0 0 5px;
+  font-size: 1rem;
+  color: #045cb3;
+}
+.order-container .bayar-box {
+  margin: 5px 0;
+}
+.order-container .bayar-box p{
+  margin: 2px 0 5px;
+  font-size: 1rem;
+  color: #045cb3;
+}
+.order-container .bayar-box label{
+  font-size: 1rem;
+  color: #045cb3;
+}
+.order-container .bayar-box .bayar-pilih{
+  width: 100%;
+  display: flex; 
+  color: #045cb3;
+}
+.order-container .bayar-box .bayar-pilih textarea{
+  width: 100%;
+  font-size: 13px;
+  display: none;
+  color: #045cb3;
+}
+.order-container .bayar-box .bayar-pilih p{
+  width: 100%;
+  font-size: 1rem;
+  color: #045cb3;
+  display: none;
+}
+.order-container .label0{
+  font-size: 1rem;
+  padding: 0;
+  color: #045cb3;
+}
+.order-container button.order-button{
+  margin-top: 10px;
+  font-size: 1rem;
+  padding: 10px 24px;
+  width: 150px;
+  align-self: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(45deg, #FFD700, darkorange);
+}
+.order-container button.dis{
+  background: darkgray;
+}
+.order-container button.order-button:active{
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.cek-input {
+  font-size: 12px;
+  text-align: center;
+  color: red;
+}
+
+
+
+
+.kontak {
+  position: relative;
+  padding: 60px 20px 20px;
+  margin: 0;
+  width: 100%;
+  color: white;
+  background: #234;
+}
+.kontak h3 {
+  text-align: center;
+}
+.kontak .kontak-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 5px;
+}
+.kontak .kontak-box .kontak-konten {
+  margin: 10px;
+  padding: 0;
+}
+.kontak .kontak-box .kontak-konten a{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 1rem;
+}
+.kontak .kontak-box .kontak-konten a img{
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin: 0;
+}
+.kontak .kontak-box .kontak-konten a p{
+  margin: auto 0;
+  padding: 2px 15px;
+  background-color: yellow;
+  border-radius: 5px;
+  transform: translateX(-7px);
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+.kontak .kontak-box .kontak-konten a p.wa{
+  background-image: linear-gradient(45deg,#25D366, #075E54);
+}
+.kontak .kontak-box .kontak-konten a p.ig{
+  background-image: linear-gradient(to top right, #FCCC63, #FBAD50, #E95950, #BC2A8d, #8A3Ab9);
+}
+.kontak .kontak-box .kontak-konten a p.telp{
+  background-image: linear-gradient(to top right, #4267B2, #3B5998);
+}
+.kontak .lokasi-konten {
+  display: flex;
+  justify-content: center;
+}
+.kontak .lokasi-konten a{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 15px auto;
+  font-size: 1rem;
+}
+.kontak .lokasi-konten a i{
+  font-size: 20px;
+  z-index: 1;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 2px solid white;
+}
+.kontak .lokasi-konten a p{
+  margin: auto 0;
+  padding: 2px 15px;
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 1rem;
+}
+
+
+.footer-konten {
+  border-top: 2px solid white;
+  margin: 30px auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer-konten .box{
+  width: min(500px, 50%);
+  margin: 0 20px;
+  font-size: 1rem;
 }
