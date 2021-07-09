@@ -1,0 +1,66 @@
+
+
+
+@media (max-width: 900px) {
+    .contentBox {
+        padding: 70px 0 20px;
+        margin: 0;
+    }
+    .contentBox .prod-card {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+    header span{
+        font-size: 14px;
+      }
+    .card{
+        margin: 10px auto;
+    }
+
+
+
+    .order-box {
+        padding: 15px;
+    }
+    .order-box .order-input, textarea {
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .order-container .order-pilih .order-item input{
+        margin: 0 5px;
+        width: 50px;
+    }
+
+
+
+    .order-box span.ket {
+        display: inline;
+        font-size: 12px;
+    }
+    
+    .order-box button.add-pilih{
+        margin: 0 0 10px 0;
+    }
+
+}
+
+@media (max-width: 620px){
+    .kontak-box {
+        flex-direction: column;
+    }
+    .lokasi-konten a.lokasi-link p {
+        font-size: 12px;
+    }
+    .footer-konten {
+        flex-direction: column;
+    }
+    .footer-konten .box{
+        width: min(500px, 100%);
+    }
+}
