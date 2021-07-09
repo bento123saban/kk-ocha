@@ -1,141 +1,205 @@
 <!doctype html><html lang="id">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/responsive.css"/>
+	<!-- <link rel="stylesheet" href="fontawesome/css/all.css"> -->
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
-<title>Hello, world!</title>
+	<script src="https://kit.fontawesome.com/b9a9bf6e53.js" crossorigin="anonymous"></script>
+	<title>Mister Shop (Buket & Ritel)</title>
 
-</head>
+</head> 
 <body>
     <nav class="navbar navbar-expand-md navbar-light" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+		<div class="container-fluid navigasi">
+			<a class="navbar-brand nav-text" href="#">MISTER SHOP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active nav-text" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#produk">Produk</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#order">Order</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#kontak">Kontak</a>
+					</li>
+				</ul>
+			</div>
+		</div>
     </nav>
     
-  <header>
-    <img class="headerImg img" src="asset/HeaderImg.jpg" alt="" />
-  </header>
+	<header>
+		<img class="header-bg" src="asset/logo.jpg" alt="" />
+		<img class="header-logo" src="asset/logo.jpg" alt="" />
+		<h2>Mister Shop</h2>
+		<h5>Buket & Ritel</h5>
+		<p class="header-text">
+			Menawarkan pilihan buket menarik dan menerima orderan desain buket sesuai keinginan anda. Tersedia juga Tas menarik dengan pilihan warna yang cantik dan ukuran yang bervariasi membuat penampilan jadi lebih menarik.
+		</p>
+		<span>(Layanan hanya untuk daerah Pulau Ambon)</span>
+		<a class="header-butt" href="#order">O r d e r</a>
+	</header>
     
-  <div class="contentBox">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="asset/Slide1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="asset/Slide2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="asset/Slide3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="prod-card">
-      <div class="prod-box box1">
-  
-      </div>
-      <div class="prod-box box2">
-  
-      </div>
-      <div class="prod-box box3">
-  
-      </div>
-      <div class="prod-box box4">
-  
-      </div>
-    </div>
-  </div>
+	<div class="contentBox" id="produk">
+		<div class="prod-card">
+			<h1>Buket</h1>
+			<p class="prod-ket">Untuk order buket Anda dapat merubah isi, warna atau bentuk buket dari tiap tipe yang telah kami sediakan ataupun Anda dapat mengorder sesuai desian atau keinginan anda sendiri.</p>
+			<div class="box buket-box">
+			
+			</div>
 
-  <div class="order-box">
-    <h1>Order</h1>
-    <form action="" class="order-form">
-      <div class="form-group">
-        <label for="order-nama">Nama</label>
-        <input type="text" id="order-nama" name="order-nama" placeholder="Masukkan Nama Anda">
-      </div>
-      <div class="form-group">
-        <label for="order-telpon">No Telpon</label>
-        <input type="text" id="order-telpon" name="order-telpon" placeholder="Masukkan Nomor Telepon Anda">
-      </div>
-      <div class="form-group">
-        <label for="order-jumlah">Jumlah</label>
-        <input type="number" id="order-jumlah" name="order-jumlah" placeholder="Masukkan Jumlah">
-      </div>
-      <div class="form-group">
-        <label for="order-jumlah">Tanggal Pengambilan</label>
-        <input type="datetime-local" id="order-jumlah" name="order-jumlah" placeholder="Masukkan Jumlah">
-      </div>
-      <div class="form-group">
-        <label for="order-deskripsi">Deskripsi</label>
-        <textarea type="text" id="order-deskripsi" name="order-deskripsi" placeholder="Masukkan Deskripsi"></textarea>
-      </div>
-      <button type="submit" class="order-button">Order</button>
-    </form>
-  </div>
+			<h1>Ritel</h1>
+			<div class="box ritel-box">
+			</div>
+		</div>
+		<p class="prod-note">*Harga yang yang tertera adalah jika anda memesan sesuai tiap gambar diatas, untuk desain atau permintaan khusus Anda harga dapat berubah teragantung bahan dan isian.</p>
+	</div>
 
-  <div class="kontak">
-    
-  </div>
+	<div class="order-box" id="order">
+		<h1>Order</h1>
+		<p></p>
+		<div class="order-container" >
+			<label for="order-nama">Masukkan Data</label>
+			<input type="text" name="nama" id="order-nama" class="order-input" placeholder="Masukkan Nama Anda" required>
+			<input type="number" name="telp" id="order-telpon" class="order-input" placeholder="Masukkan Nomor Telepon Anda" required>
+
+			<p class="daftar-order">Daftar Order :</p>
+			<ol class="order-pilih">
+				
+			</ol>
+			<span class="total-harga"></span>
+
+			<textarea name="desc" id="order-deskripsi" class="order-input" placeholder="Masukkan Deskripsi orderan Anda, atau jika anda memiliki permintaan tertentu (khusus buket), silahkan masukan disini" required></textarea>
+
+			<div class="bayar-box">
+				<p>Metode Pembayaran :</p>
+				<input type="radio" name="bayar" id="cod" value="cod" class="radio" required> <label for="cod">COD (bayar ditempat)</label> &nbsp &nbsp &nbsp &nbsp
+				<input type="radio" name="bayar" id="ambil" value="ambil" class="radio"> <label for="ambil">Ambil sendiri</label>
+				<div class="bayar-pilih">
+					<textarea name="alamat" id="alamat" class="order-input" placeholder="Masukan Alamat Lengkap Anda untuk pengantaran item. Anda akan dikenakan biaya tambahan untuk pengantaran item" required></textarea>
+					<p class="bayar-ambil" id="lokasi-bayar">Klik <a href="">DISINI</a> untuk mendapatkan Lokasi Kami. Kami menunggu kedatangan anda</p>
+				</div>
+			</div>
+			<p class="cek-input">Masukan semua data dan pilih pembayaran</p>
+			<button type="submit" class="order-button" id="order-button">O R D E R</button>
+		</div>
+	</div>
 
 
+
+	<div class="kontak">
+		<h3>Hubungi Kami di :</h3>
+		<div class="kontak-box">
+			<div class="kontak-konten">
+				<a href="" class="kontak-link">
+					<img src="asset/png/wa.svg" alt="">
+					<p class="wa">0808080808080</p>
+				</a>
+			</div>
+			<div class="kontak-konten">
+				<a href="" class="kontak-link">
+					<img src="asset/png/ig.svg" alt="">
+					<p class="ig">@misterShop17</p>
+				</a>
+			</div>
+			<div class="kontak-konten">
+				<a href="" class="kontak-link">
+					<img src="asset/png/telp.svg" alt="">
+					<p class="telp">0808080808080</p>
+				</a>
+			</div>
+		</div>
+		<div class="lokasi-konten">
+			<a href="" class="lokasi-link">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Lorong Kantor Desa Hative Kecil, Samping PLTD Galala.</p>
+			</a>
+		</div>
+
+		<div class="footer-konten">
+			<div class="box">
+				<h4>Tentang Kami</h4>
+				<p>Mister Shop adalah penyedia jasa pembuatan dan penjualan buket serta reseller tas merk cecilia. ............... </p>
+			</div>
+			<div class="box">
+				<h4>Jam Layanan :</h4>
+				<p>Setiap Hari, 06.00 - 22.00 WIT <br>Kecuali Minggu (Libur)</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="konfirmasi">
+		
+	</div>
+
   
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-    
-  </body>
+	<script src="js/order.js"></script>
+
+    <script>
+		let orderArray = []
+
+		window.addEventListener('load', function(e) {
+			document.querySelectorAll('.nav-text').forEach( a => {
+				a.style.color = 'white'
+			})
+			daftarOrder()
+		})
+
+		window.addEventListener('click', function(e){
+			if (e.target.matches('.tambah')) {
+				tambahOrder(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.fa-trash')) {
+				hapusItem(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.order-button')){
+				cekIsi()
+			}
+		})
+
+		window.addEventListener('change', function(e){
+			if (e.target.matches('#cod')){
+				document.querySelector('#alamat').style.display = 'block'
+				document.querySelector('#lokasi-bayar').style.display = 'none'
+			}
+			else if (e.target.matches('#ambil')){
+				document.querySelector('#alamat').style.display = 'none'
+				document.querySelector('#lokasi-bayar').style.display = 'block'
+			}
+			else if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
+
+		window.addEventListener('keyup', function(e){
+			if(e.target.matches('.order-input')){
+				jikaKosong(e.target)
+			}
+			else if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
+
+    </script>
+</body>
 </html>
