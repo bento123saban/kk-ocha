@@ -101,7 +101,7 @@ header .header-bg {
   margin: 0;
   background-color: #123;
   opacity: 97%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 header img.header-logo {
   position: relative;
