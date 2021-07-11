@@ -81,6 +81,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #123;
 }
 header span{
   font-size: 14px;
@@ -335,7 +336,6 @@ header a {
 
 .order-box {
   padding: 70px 40px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
