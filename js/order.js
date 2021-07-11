@@ -422,5 +422,7 @@ function order(){
     `
     const encode = encodeURI(dataWA)
     const linkWA = `https://wa.me/+6281354741823?text=${encode}`
-    window.location.replace(linkWA)
+    // window.open(linkWA)
+    console.info(linkWA)
+    console.info(dataWA)
 }
