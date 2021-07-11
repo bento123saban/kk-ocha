@@ -34,8 +34,7 @@
 
 
     .order-box {
-        padding: 50px 15px 20px;
-        height: auto;
+        padding: 50px 10px 10px;
     }
     .order-box .order-input, textarea {
         margin: 5px 0;
