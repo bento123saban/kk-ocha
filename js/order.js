@@ -5,7 +5,7 @@ const buketData = [
         ID :  "01001",
         tipe : "Buket Tipe 1",
         nama : "Biskuit Oreo",
-        img : "buket.oreo.jpg",
+        img : "buket/buket.oreo.jpg",
         deskripsi : "Buket Oreo, dengan biskuit Oreo dibungkus kertas biru dan pita merah serta hiasan berbentuk bunga putih. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -13,7 +13,7 @@ const buketData = [
         ID :  "01002",
         tipe : "Buket Tipe 2",
         nama : "Snack Beng-Beng",
-        img : "buket.beng-beng.jpg",
+        img : "buket/buket.beng-beng.jpg",
         deskripsi : "Buket Snack Beng-Beng & Top, dibungkus kertas hitam corak garis putih, dengan snack Beng-beng 2 rasa (coklat & strawbery), snack Top rasa coklat dan hiasan biskuit better diikat pita merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -21,7 +21,7 @@ const buketData = [
         ID :  "01003",
         tipe : "Buket Tipe 3",
         nama : "Biskuit Better",
-        img : "buket.better.jpg",
+        img : "buket/buket.better.jpg",
         deskripsi : "Buket Biskuit Better, dengan biskuit Oreo dibungkus kertas putih dan pita merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -29,7 +29,7 @@ const buketData = [
         ID :  "01004",
         tipe: "Buket Tipe 4",
         nama : "Bunga Mawar",
-        img : "buket.mawar.jpg",
+        img : "buket/buket.mawar.jpg",
         deskripsi : "Buket Bunga Mawar, dengan Bunga Mawar Merah dan Putih dibungkus kertas corak ungu, gold dan p ink, dengan hiasan pita silver. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -37,7 +37,7 @@ const buketData = [
         ID :  "01005",
         tipe: "Buket Tipe 5",
         nama : "Uang Rp 5000, 40 Lembar",
-        img : "buket.uang5.jpg",
+        img : "buket/buket.uang5.jpg",
         deskripsi : "Buket Uang Rp 5000 Asli/Mainan #40 Lembar, dibungkus ketas pink dan coklat serta hiasan bunga merah dan pita silver merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -45,7 +45,7 @@ const buketData = [
         ID :  "01006",
         tipe : "Buket Tipe 6",
         nama : "Coklat SilverQueen",
-        img : "buket.silverqueen.jpg",
+        img : "buket/buket.silverqueen.jpg",
         deskripsi : "Buket Coklat SilverQueen, dengan isian SilverQueen Chocolate Bar, dibungkus kertas hitam pink dan putih, serta hiasan bunga merah dan pita merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -53,7 +53,7 @@ const buketData = [
         ID :  "01007",
         tipe : "Buket Tipe 7",
         nama : "Snack Wafle",
-        img : "buket.wafle.jpg",
+        img : "buket/buket.wafle.jpg",
         deskripsi : "Buket Snack Wafle, dengan isian snack Wafle dan biskuit Arden dibungkus kertas Hitam dengan corak gold dan merah serta dihias bunga merah dan pita merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
@@ -61,7 +61,7 @@ const buketData = [
         ID :  "01008",
         tipe : "Buket Tipe 8",
         nama : "Bunga Flanel",
-        img : "buket.flanel.jpg",
+        img : "buket/buket.flanel.jpg",
         deskripsi : "Buket Bunga Flanel, dengan bunga flanel pink dan biru cyan, dinungkus kertas silver dan gold dan dihias pita silver. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     }
@@ -72,23 +72,23 @@ const ritelData = [
         ID :  "02001",
         tipe : '',
         nama : "Tas 01",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (1).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 65000
     },
     {
         ID :  "02002",
         tipe : '',
         nama : "Tas 02",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (2).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 65000
     },
     {
         ID :  "02003",
         tipe : '',
         nama : "Tas 03",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (3).jpg",
         deskripsi : "",
         harga : 123
     },
@@ -96,7 +96,7 @@ const ritelData = [
         ID :  "02004",
         tipe : '',
         nama : "Tas 04",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (4).jpg",
         deskripsi : "",
         harga : 123
     },
@@ -104,31 +104,31 @@ const ritelData = [
         ID :  "02005",
         tipe : '',
         nama : "Tas 05",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (5).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 65000
     },
     {
         ID :  "02006",
         tipe : '',
         nama : "Tas 06",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (6).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 65000
     },
     {
         ID :  "02007",
         tipe : '',
         nama : "Tas 07",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (7).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 100000
     },
     {
         ID :  "02008",
         tipe : '',
         nama : "Tas 08",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (8).jpg",
         deskripsi : "",
         harga : 123
     },
@@ -136,17 +136,105 @@ const ritelData = [
         ID :  "02009",
         tipe : '',
         nama : "Tas 09",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (9).jpg",
         deskripsi : "",
-        harga : 123
+        harga : 65000
     },
     {
         ID :  "02010",
         tipe : '',
         nama : "Tas 10",
-        img : "buket.wafle.jpg",
+        img : "ritel/tas (10).jpg",
         deskripsi : "",
         harga : 123
+    },
+    {
+        ID :  "02011",
+        tipe : '',
+        nama : "Tas 11",
+        img : "ritel/tas (11).jpg",
+        deskripsi : "",
+        harga : 65000
+    },
+    {
+        ID :  "02012",
+        tipe : '',
+        nama : "Tas 12",
+        img : "ritel/tas (12).jpg",
+        deskripsi : "",
+        harga : 100000
+    },
+    {
+        ID :  "02013",
+        tipe : '',
+        nama : "Tas 10",
+        img : "ritel/tas (13).jpg",
+        deskripsi : "",
+        harga : 100000
+    },
+    {
+        ID :  "02014",
+        tipe : '',
+        nama : "Tas 14",
+        img : "ritel/tas (14).jpg",
+        deskripsi : "",
+        harga : 100000
+    },
+    {
+        ID :  "02015",
+        tipe : '',
+        nama : "Tas 15",
+        img : "ritel/tas (15).jpg",
+        deskripsi : "",
+        harga : 65000
+    },
+    {
+        ID :  "02016",
+        tipe : '',
+        nama : "Tas 16",
+        img : "ritel/tas (16).jpg",
+        deskripsi : "",
+        harga : 123
+    },
+    {
+        ID :  "02017",
+        tipe : '',
+        nama : "Tas 17",
+        img : "ritel/tas (17).jpg",
+        deskripsi : "",
+        harga : 100000
+    },
+    {
+        ID :  "02018",
+        tipe : '',
+        nama : "Tas 18",
+        img : "ritel/tas (18).jpg",
+        deskripsi : "",
+        harga : 65000
+    },
+    {
+        ID :  "02019",
+        tipe : '',
+        nama : "Tas 19",
+        img : "ritel/tas (19).jpg",
+        deskripsi : "",
+        harga : 100000
+    },
+    {
+        ID :  "02020",
+        tipe : '',
+        nama : "Tas 20",
+        img : "ritel/tas (20).jpg",
+        deskripsi : "",
+        harga : 65000
+    },
+    {
+        ID :  "02021",
+        tipe : '',
+        nama : "Tas 21",
+        img : "ritel/tas (21).jpg",
+        deskripsi : "",
+        harga : 100000
     }
 ]
 
@@ -158,11 +246,11 @@ function perulanganData(array)
         html += 
         `
             <div class="card" data-nama="${item.tipe} ${item.nama}">
-                <img src="asset/buket/${item.img}" alt="" class="img">
+                <img src="asset/${item.img}" alt="" class="img">
                 <div class="text">
                     <p class="nama">${item.tipe}<br>${item.nama}</p>
                     <p class="desc">${item.deskripsi}</p>
-                    <p class="harga"><span class='rp'>~Rp ${item.harga}*</span> <span data-id="${item.ID}" class="tambah" >Order</span></p>
+                    <p class="harga"><span class='rp'>Rp. ${item.harga}</span> <span data-id="${item.ID}" class="tambah" >Order</span></p>
                 </div>
             </div>
         `
@@ -330,11 +418,11 @@ function order(){
         total += parseFloat(item.harga) * parseFloat(item.jumlah) // mengalikan harga dari item 
     });
  
-    let dataWA = `Order Baru !! - ${new Date()}\n\n${nama} - ${telp}\n${orderan} Total : Rp. ${total}\n\nDeskripsi : ${deskripsi}\n\nPembayaran :\n${bayar[0]}, ${bayar[1]}
+    let dataWA = `Order Baru !! - ${new Date()}\n\n${nama} - ${telp}\n\n${orderan} Total : Rp. ${total}\n\nDeskripsi : ${deskripsi}\n\nPembayaran :\n${bayar[0]}, ${bayar[1]}
     `
     const encode = encodeURI(dataWA)
     const linkWA = `https://wa.me/+6281354741823?text=${encode}`
-    window.open(linkWA)
+    // window.open(linkWA)
     console.info(linkWA)
     console.info(dataWA)
 }
