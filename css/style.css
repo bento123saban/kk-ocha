@@ -83,7 +83,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #123;
+  /* background-color: #123; */
 }
 header span{
   font-size: 14px;
@@ -95,7 +95,6 @@ header img.header-bg {
   object-fit: cover;
   object-position: center;
   filter: brightness(10%);
-  z-index: ;
   padding: 0;
 }
 header img.header-logo {
