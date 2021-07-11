@@ -3,7 +3,7 @@
 
 @media (max-width: 900px) {
     .contentBox {
-        padding: 70px 0 20px;
+        padding: 50px 5px 20px;
         margin: 0;
     }
     .contentBox .prod-card {
@@ -17,7 +17,17 @@
     }
     header span{
         font-size: 14px;
-      }
+    }
+
+
+    .prod-card p.prod-ket {
+        font-size: 11px;
+    }
+
+
+
+
+
     .card{
         margin: 10px auto;
     }
@@ -25,12 +35,13 @@
 
 
     .order-box {
-        padding: 15px;
+        padding: 50px 15px 20px;
+        height: auto;
     }
     .order-box .order-input, textarea {
         margin: 5px 0;
-        padding: 5px;
-        font-size: 12px;
+        padding: 7px;
+        font-size: 15px;
     }
     .order-container .order-pilih .order-item input{
         margin: 0 5px;
