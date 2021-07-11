@@ -26,6 +26,8 @@ button, a {
 
 body {
     font-size: 15pt;
+    padding: 0;
+    margin: 0;
 }
 
 nav.navbar {
