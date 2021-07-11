@@ -84,18 +84,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('../asset/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 header span{
   font-size: 14px;
 }
-header img.header-bg {
+header .header-bg {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
-  filter: brightness(10%);
-  padding: 0;
+  margin: 0;
+  background-color: #123;
+  opacity: 97%;
+  z-index: -1;
 }
 header img.header-logo {
   position: relative;
