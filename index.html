@@ -89,7 +89,7 @@
 				<input type="radio" name="bayar" id="cod" value="cod" class="radio" required> <label for="cod">COD (bayar ditempat)</label> &nbsp &nbsp &nbsp &nbsp
 				<input type="radio" name="bayar" id="ambil" value="ambil" class="radio"> <label for="ambil">Ambil sendiri</label>
 				<div class="bayar-pilih">
-					<textarea name="alamat" id="alamat" class="order-input" placeholder="Masukan Alamat Lengkap Anda untuk pengantaran item. Anda akan dikenakan biaya tambahan untuk pengantaran item" required></textarea>
+					<textarea name="alamat" id="alamat" placeholder="Masukan Alamat Lengkap Anda untuk pengantaran item. Anda akan dikenakan biaya tambahan untuk pengantaran item" required></textarea>
 					<p class="bayar-ambil" id="lokasi-bayar">Klik <a href="">DISINI</a> untuk mendapatkan Lokasi Kami. Kami menunggu kedatangan anda</p>
 				</div>
 			</div>
@@ -181,10 +181,12 @@
 
 		window.addEventListener('change', function(e){
 			if (e.target.matches('#cod')){
+				document.querySelector('#alamat').classList.add('order-input')
 				document.querySelector('#alamat').style.display = 'block'
 				document.querySelector('#lokasi-bayar').style.display = 'none'
 			}
 			else if (e.target.matches('#ambil')){
+				document.querySelector('#alamat').classList.remove('order-input')
 				document.querySelector('#alamat').style.display = 'none'
 				document.querySelector('#lokasi-bayar').style.display = 'block'
 			}
