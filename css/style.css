@@ -1,604 +1,210 @@
-:root {
+<!doctype html><html lang="id">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/responsive.css"/>
+
+
+	<script src="https://kit.fontawesome.com/b9a9bf6e53.js" crossorigin="anonymous"></script>
+	<title>Mister Shop (Buket & Ritel)</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+		<div class="container-fluid navigasi">
+			<a class="navbar-brand nav-text" href="#">MISTER SHOP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active nav-text" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#produk">Produk</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#order">Order</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-text" href="#kontak">Kontak</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+    
+	<header>
+		<!-- <div class="header-bg"></div> -->
+		<img class="header-logo" src="asset/logo.jpg" alt="" />
+		<h2>Mister Shop</h2>
+		<h5>Buket & Ritel</h5>
+		<p class="header-text">
+			Menawarkan pilihan buket menarik dan menerima orderan desain buket sesuai keinginan anda. Tersedia juga Tas menarik dengan pilihan warna yang cantik dan ukuran yang bervariasi membuat penampilan jadi lebih menarik.
+		</p>
+		<span>(Layanan hanya untuk daerah Pulau Ambon)</span>
+		<a class="header-butt" href="#order">O r d e r</a>
+	</header>
+    
+	<div class="contentBox" id="produk">
+		<div class="prod-card">
+			<h1>Buket</h1>
+			<p class="prod-ket">Untuk order buket Anda dapat merubah isi, warna atau bentuk buket dari tiap tipe yang telah kami sediakan ataupun Anda dapat mengorder sesuai desian atau keinginan anda sendiri.</p>
+			<div class="box buket-box">
+			
+			</div>
+		<p class="prod-note">*Harga yang yang tertera adalah jika anda memesan sesuai tiap gambar diatas, untuk desain atau permintaan khusus Anda harga dapat berubah teragantung bahan dan isian.</p>
+
+			<h1>Ritel</h1>
+			<div class="box ritel-box">
+			</div>
+		</div>
+	</div>
+
+	<div class="order-box" id="order">
+		<h1>Order</h1>
+		<p></p>
+		<div class="order-container" >
+			<label for="order-nama">Masukkan Data</label>
+			<input type="text" name="nama" id="order-nama" class="order-input" placeholder="Masukkan Nama Anda" required>
+			<input type="number" name="telp" id="order-telpon" class="order-input" placeholder="Masukkan Nomor Telepon Anda" required>
+
+			<p class="daftar-order">Daftar Order :</p>
+			<ol class="order-pilih">
+				
+			</ol>
+			<span class="total-harga"></span>
+
+			<textarea name="desc" id="order-deskripsi" class="order-input" placeholder="Masukkan Deskripsi orderan Anda, atau jika anda memiliki permintaan tertentu (khusus buket), silahkan masukan disini" required></textarea>
+
+			<div class="bayar-box">
+				<p>Metode Pembayaran :</p>
+				<input type="radio" name="bayar" id="cod" value="cod" class="radio" required> <label for="cod">COD (bayar ditempat)</label> &nbsp &nbsp &nbsp &nbsp
+				<input type="radio" name="bayar" id="ambil" value="ambil" class="radio"> <label for="ambil">Ambil sendiri</label>
+				<div class="bayar-pilih">
+					<textarea name="alamat" id="alamat" placeholder="Masukan Alamat Lengkap Anda untuk pengantaran item. Anda akan dikenakan biaya tambahan untuk pengantaran item" required></textarea>
+					<p class="bayar-ambil" id="lokasi-bayar">Klik <a href="">DISINI</a> untuk mendapatkan Lokasi Kami. Kami menunggu kedatangan anda</p>
+				</div>
+			</div>
+			<p class="cek-input">Masukan semua data dan pilih pembayaran</p>
+			<button type="submit" class="order-button" id="order-button">O R D E R</button>
+		</div>
+	</div>
+
+
+
+	<div class="kontak">
+		<h3>Hubungi Kami di :</h3>
+		<div class="kontak-box">
+			<div class="kontak-konten">
+				<a href="https://wa.me/+6281354741823?text=Hallo admin Mister Shop.\n" class="kontak-link">
+					<img src="asset/png/wa.svg" alt="">
+					<p class="wa">081248877156</p>
+				</a>
+			</div>
+			<div class="kontak-konten">
+				<a href="" class="kontak-link">
+					<img src="asset/png/ig.svg" alt="">
+					<p class="ig">@mister.shop17</p>
+				</a>
+			</div>
+			<div class="kontak-konten">
+				<a href="tel:081248877156" class="kontak-link">
+					<img src="asset/png/telp.svg" alt="">
+					<p class="telp">081248877156</p>
+				</a>
+			</div>
+		</div>
+		<div class="lokasi-konten">
+			<a href="" class="lokasi-link">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Lorong Kantor Desa Hative Kecil, Samping PLTD Galala.</p>
+			</a>
+		</div>
+
+		<div class="footer-konten">
+			<div class="box">
+				<h4>Tentang Kami</h4>
+				<p>Mister Shop adalah penyedia jasa pembuatan dan penjualan buket serta reseller tas merk cecilia. ............... </p>
+			</div>
+			<div class="box">
+				<h4>Jam Layanan :</h4>
+				<p>Setiap Hari, 06.00 - 22.00 WIT <br>Kecuali Minggu (Libur)</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="konfirmasi">
+		
+	</div>
+
   
-}
-html {
-  scroll-behavior: smooth;
-}
-::placeholder {
-  color: #045bb388;
-}
-* {
-  box-sizing: border-box;
-}
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+	<script src="js/order.js"></script>
 
-button, a {
-  cursor: pointer !important;
-  outline: none !important;
-  text-decoration: none !important;
-}
+    <script>
+		document.querySelectorAll('.nav-text').forEach( a => {
+				a.style.color = 'white'
+		})
 
-.img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
+		let orderArray = []
 
-body {
-    font-size: 15pt;
-    padding: 0;
-    margin: 0;
-}
+		window.addEventListener('load', function(e) {
+			daftarOrder()
+		})
 
-nav.navbar {
-  position: fixed;
-  top: 0;
-  padding: 0;
-  width: 100%;
-  z-index: 4;
-  background: rgba(0,0,0,.5);
-  backdrop-filter: blur(5px);
-  transition: all .4s ease-in-out;
-  z-index: 10;
-}
-a.navbar-brand {
-  margin:0;
-  padding: 0;
-  color: white;
-}
-.navbar-toggler {
-  height: 35px;
-  width: 40px;
-  margin: 5px;
-  padding: 0;
-  background: rgba(0,0,0,.1);
-  box-shadow: none;
-}
-.navbar-toggler span {
-  color: white;
-}
-.nav-text {
-  color: white;
-}
-.navigasi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar-nav {
-  margin-left: 100px;
-}
+		window.addEventListener('click', function(e){
+			if (e.target.matches('.tambah')) {
+				tambahOrder(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.fa-trash')) {
+				hapusItem(e.target)
+				daftarOrder()
+				hitungTotal()
+			}
+			else if (e.target.matches('.order-button')){
+				cekIsi()
+			}
+		})
 
+		window.addEventListener('change', function(e){
+			if (e.target.matches('#cod')){
+				document.querySelector('#alamat').classList.add('order-input')
+				document.querySelector('#alamat').style.display = 'block'
+				document.querySelector('#lokasi-bayar').style.display = 'none'
+			}
+			else if (e.target.matches('#ambil')){
+				document.querySelector('#alamat').classList.remove('order-input')
+				document.querySelector('#alamat').style.display = 'none'
+				document.querySelector('#lokasi-bayar').style.display = 'block'
+			}
+			else if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
 
-
-
-
-
-header {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  color:  white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-header span{
-  font-size: 14px;
-}
-header .header-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-image: url('../asset/logo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  filter: brightness(10%);
-  z-index: -1;
-}
-header img.header-logo {
-  position: relative;
-  display: block;
-  margin: 5% auto 10px;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  border: 2px solid white;
-  box-shadow: 0 0 100px rgba(0,0,0,.5);
-  z-index: 2;
-}
-header h5, header h2{
-  text-align: center;
-}
-header p {
-  width: 100%;
-  max-width: 600px;
-  padding: 2px 10px;
-  font-size: 14px;
-  text-align: center;
-}
-header a {
-  padding: 7px 20px;
-  background: linear-gradient(45deg, #FFD700, orange);
-  margin: 5px auto;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0 0 50px rgba(0,0,0,.5);
-}
-
-
-
-
-
-.contentBox {
-  padding: 70px 10 50px;
-  margin: 0;
-  width: 100%;
-}
-.prod-card {
-  flex: 1;
-  height: auto;
-  margin: 0 0 0 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.prod-card h1 {
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 5px 0;
-}
-.prod-card p.prod-ket {
-  text-align: center;
-  font-size: 1rem; 
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.prod-card .box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 5px auto 2px;
-}
-#produk p.prod-note {
-  text-align: left;
-  font-size: 10px;
-  padding: 3px 30px;
-}
-
-
-
-
-
-
-.card{
-  position: relative;
-  width: 185px;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: 30px 30px;
-  padding: 0;
-  border-radius: 10px;
-  transition: all .5s ease-in-out;
-  border: none !important;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0px 50px rgba(0,0,0,.5);
-}
-.card img {
-  z-index: 0;
-  transition: all .5s ease-in-out;
-  position: absolute;
-}
-.card.card:hover img {
-  height: 80%;
-  filter: brightness(55%);
-}
-.card .text {
-  position: absolute;
-  background: linear-gradient(45deg, #234, );
-  color: white;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  height: 45px;
-  transition: all .5s ease-in-out;
-}
-
-.card:hover .text {
-  height: 90%;
-}
-.card .text .nama {
-  position: relative;
-  margin: 0;
-  text-align: center;
-  font-size: 13px;
-  height: 45px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s ease-in-out;
-  color: white;
-  font-weight: bold;
-  backdrop-filter: blur(2px);
-  background: rgba(0,0,0,0.3);
-}
-.card:hover .text .nama {
-  backdrop-filter: none;
-  background: none;
-
-}
-.card .text .nama::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -5px;
-  width: 50%;
-  border-top: 1px solid white;
-  transition: all .5s ease-in-out;
-}
-.card:hover .text .nama::before {
-  left: -50%;
-}
-.card .text .nama::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -5px;
-  width: 50%;
-  border-top: 1px solid white;
-  transition: all .5s ease-in-out;
-}
-.card:hover .text .nama::after{
-  right: -50%;
-}
-.card .nama span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  height: 3px;
-  width: 5px;
-  opacity: 1;
-  transition: all .5s ease-in-out;
-}
-.card:hover .nama span{
-  opacity: 0;
-}
-.card .text .desc{
-  background: linear-gradient(45deg, #FFD700, darkorange);
-  width:100%;
-  margin:0;
-  padding: 6px;
-  font-size: 11px;
-  text-align: justify;
-  height: 100%;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-.card .text .harga{
-  background: greenyellow;
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  transition: all .5s ease-in-out;
-  z-index: 2;
-  transition-delay: .4s;
-}
-.card:hover .text .harga {
-  bottom: -16px;
-  filter: drop-shadow(3px 4px);
-}
-.card .text .harga span.rp {
-  padding: 5px 10px;
-}
-.card .text .harga span.tambah {
-  background-color: white;
-  color: #123;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-.card .text .harga span.tambah:active {
-  background-color: #123;
-  color: white;
-  font-weight: bold;
-} 
-.contentBox {
-  padding: 70px 40px;
-}
-
-
-
-
-
-
-.order-box {
-  padding: 70px 40px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: rgba(0,0,0,.1);
-}
-.order-box h1 {
-  text-transform: uppercase;
-  text-align: center;
-  color: #044383;
-}
-.order-box .order-container{
-  min-height: 10%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.order-container label{
-  color: #044383;
-}
-
-.order-container .order-input, textarea {
-  position: relative;
-  padding: 7px;
-  padding-left: 10px;
-  margin: 0 0 15px;
-  border: 2px solid #044383;
-  border-radius: 5px;
-	font-size: 14px;
-  position: relative;
-  outline: none;
-  background-color: transparent; 
-  color: #044383;
-}
-.order-container textarea {
-	height: 100px;
-}
-.order-container p.daftar-order {
-  font-size: 1rem;
-  margin: 0 5px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #044383;
-}
-
-
-
-
-
-.order-container .order-pilih {
-  padding: 10px 0 10px 30px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #044383;
-}
-.order-container .order-pilih p {
-  font-size: 14px;
-  margin: 10px auto;
-  text-align: center;
-  color: #044383;
-}
-.order-container .order-pilih .order-item{
-  margin: 3px 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  padding: 0;
-  color: #044383;
-}
-.order-container .order-pilih .order-item li{
-  flex: 1;
-  color: #044383;
-}
-.order-container .order-pilih .order-item input{
-  margin: 0 25px;
-  width: 80px;
-  text-align: center;
-  color: #044383;
-  border: 2px solid #044383;
-  border-radius: 6px;
-  background: transparent;
-}
-.order-container .order-pilih .order-item i{
-  margin: 0 5px;
-  font-size: 1rem;
-  color: #044383;
-}
-
-
-
-
-
-
-.order-container .total-harga {
-  margin: 0 0 5px;
-  font-size: 1rem;
-  color: #044383;
-}
-.order-container .bayar-box {
-  margin: 5px 0 30px;
-}
-.order-container .bayar-box p{
-  margin: 2px 0 5px;
-  font-size: 1rem;
-  color: #044383;
-}
-.order-container .bayar-box label{
-  font-size: 1rem;
-  color: #044383; 
-}
-.order-container .bayar-box .bayar-pilih{
-  width: 100%;
-  display: flex;
-  color: #044383;
-}
-.order-container .bayar-box .bayar-pilih textarea{
-  width: 100%;
-  font-size: 13px;
-  display: none;
-  color: #044383;
-}
-.order-container .bayar-box .bayar-pilih p{
-  width: 100%;
-  font-size: 1rem;
-  color: #044383;
-  display: none;
-}
-.order-container .label0{
-  font-size: 1rem;
-  padding: 0;
-  color: #044383;
-}
-.order-container button.order-button{
-  margin-top: 10px;
-  font-size: 1rem;
-  padding: 10px 24px;
-  width: 150px;
-  align-self: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  background: linear-gradient(45deg, #FFD700, darkorange);
-}
-.order-container button.dis{
-  background: darkgray;
-}
-.order-container button.order-button:active{
-  box-shadow: 0 0 20px rgba(0,0,0,.5);
-}
-
-.cek-input {
-  font-size: 12px;
-  text-align: center;
-  color: red;
-}
-
-
-
-
-.kontak {
-  position: relative;
-  padding: 60px 20px 20px;
-  margin: 0;
-  width: 100%;
-  color: white;
-  background: #234;
-}
-.kontak h3 {
-  text-align: center;
-}
-.kontak .kontak-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0 5px;
-}
-.kontak .kontak-box .kontak-konten {
-  margin: 10px;
-  padding: 0;
-}
-.kontak .kontak-box .kontak-konten a{
-  display: flex;
-  align-items: center;
-  padding: 0;
-  font-size: 1rem;
-}
-.kontak .kontak-box .kontak-konten a img{
-  height: 40px;
-  width: 40px;
-  z-index: 1;
-  margin: 0;
-}
-.kontak .kontak-box .kontak-konten a p{
-  margin: auto 0;
-  padding: 2px 15px;
-  background-color: yellow;
-  border-radius: 5px;
-  transform: translateX(-7px);
-  color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,.4);
-}
-.kontak .kontak-box .kontak-konten a p.wa{
-  background-image: linear-gradient(45deg,#25D366, #075E54);
-}
-.kontak .kontak-box .kontak-konten a p.ig{
-  background-image: linear-gradient(to top right, #FCCC63, #FBAD50, #E95950, #BC2A8d, #8A3Ab9);
-}
-.kontak .kontak-box .kontak-konten a p.telp{
-  background-image: linear-gradient(to top right, #4267B2, #3B5998);
-}
-.kontak .lokasi-konten {
-  display: flex;
-  justify-content: center;
-}
-.kontak .lokasi-konten a{
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 15px auto;
-  font-size: 1rem;
-}
-.kontak .lokasi-konten a i{
-  font-size: 20px;
-  z-index: 1;
-  margin: 0;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  border-radius: 6px;
-  border: 2px solid white;
-}
-.kontak .lokasi-konten a p{
-  margin: auto 0;
-  padding: 2px 15px;
-  color: white;
-  border-bottom: 2px solid white;
-  font-size: 1rem;
-}
-
-
-.footer-konten {
-  border-top: 2px solid white;
-  margin: 30px auto;
-  padding: 20px 10px;
-  display: flex;
-  justify-content: center;
-}
-.footer-konten .box{
-  width: min(500px, 50%);
-  margin: 0 20px;
-  font-size: 1rem;
-}
+		window.addEventListener('keyup', function(e){
+			if(e.target.matches('.order-input')){
+				jikaKosong(e.target)
+			}
+			else if (e.target.matches('.jumlah-item')){
+				gantiNilai(e.target)
+				jikaKosong(e.target)
+			}
+		})
+    </script>
+</body>
+</html>
