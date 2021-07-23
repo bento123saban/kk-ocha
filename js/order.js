@@ -249,7 +249,7 @@ function perulanganData(array)
                 <img src="asset/${item.img}" alt="" class="img">
                 <div class="text">
                     <p class="nama">${item.tipe}<br>${item.nama}</p>
-                    <p class="desc">${item.deskripsi}</p>
+                    <div class="desc"><p>${item.deskripsi}</p></div>
                     <p class="harga"><span class='rp'>Rp. ${item.harga}</span> <span data-id="${item.ID}" class="tambah" >Order</span></p>
                 </div>
             </div>
