@@ -1,3 +1,14 @@
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+  /* font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', serif; */
+
+
+
+
+
 :root {
   
 }
@@ -17,6 +28,13 @@ button, a {
   text-decoration: none !important;
 }
 
+p, input, label, span, textarea, li {
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h5, button, a {
+  font-family: 'Roboto Slab', serif;
+}
+
 .img {
   height: 100%;
   width: 100%;
@@ -27,6 +45,27 @@ button, a {
 body {
     padding: 0;
     margin: 0;
+    /* background: linear-gradient(45deg, #fff, rgb(201, 199, 199)); */
+}
+
+.animasi {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -4;
+  top: 0;
+  left: 0;
+}
+.fa-snowflake {
+  color: #16c8dc;
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
 }
 
 nav.navbar {
@@ -83,7 +122,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  background: linear-gradient(45deg, #023963, rgb(0, 36, 90));
+  /* background: #123; */
 }
 header span{
   font-size: 14px;
@@ -94,8 +134,9 @@ header img.header-bg {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(10%);
-  z-index: -1;
+  /* filter: brightness(10%); */
+  opacity: 0.03;
+  /* z-index: -1; */
   padding: 0;
 }
 header img.header-logo {
@@ -183,7 +224,9 @@ header a {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  background-color: black;
+  background: linear-gradient(45deg, #096ab4, rgb(0, 36, 90));
+  /* background: linear-gradient(45deg, #16c8dc, rgb(0, 102, 255)); */
+  /* background: linear-gradient(45deg, #00135f, #123); */
   color: white;
   padding: 5px 0;
 }
@@ -216,7 +259,7 @@ header a {
 .card{
   position: relative;
   width: 185px;
-  height: 250px;
+  height: 280px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -224,7 +267,7 @@ header a {
   padding: 0;
   border-radius: 10px;
   transition: all .5s ease-in-out;
-  border: none !important;
+  border: 2px solid white;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -315,18 +358,38 @@ header a {
   opacity: 0;
 }
 .card .text .desc{
-  background: linear-gradient(45deg, #FFD700, darkorange);
+  background: linear-gradient(45deg, #16c8dc, rgb(0, 102, 255));
   width:100%;
   margin:0;
-  padding: 6px;
-  font-size: 11px;
-  text-align: justify;
+  padding: 6px 6px;
   height: 100%;
   border-radius: 8px;
   box-sizing: border-box;
+  overflow: scroll;
+}
+.card .text .desc::-webkit-scrollbar {
+  /* width: 5px; */
+  display: none;
+}
+/* .card .text .desc::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+}
+
+.card .text .desc::-webkit-scrollbar-thumb {
+  background: white;
+} */
+
+
+.card .text .desc p{
+  text-align: justify;
+  font-size: 12px;
+  margin: 0;
+  padding: 0 0 55px;
+  color: white;
+  min-height: 300px;
 }
 .card .text .harga{
-  background: greenyellow;
+  background: linear-gradient(45deg, #FFD700, orange);
   position: absolute;
   bottom: -50px;
   left: 0;
@@ -339,6 +402,7 @@ header a {
   transition: all .5s ease-in-out;
   z-index: 2;
   transition-delay: .4s;
+  font-weight: bold;
 }
 .card:hover .text .harga {
   bottom: -16px;
@@ -541,7 +605,8 @@ header a {
   margin: 0;
   width: 100%;
   color: white;
-  background: #234;
+  background: linear-gradient(45deg, #023963, rgb(0, 36, 90));
+  /* background: #234; */
 }
 .kontak h3 {
   text-align: center;
