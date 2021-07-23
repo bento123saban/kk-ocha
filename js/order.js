@@ -336,7 +336,41 @@ function tambahOrder(element) {
         }
         orderArray.push(objek)
     }
+    tambahSukses()
 }
+
+var suksesInterval = ''
+function tambahSukses() {
+    let hitung = 6
+    const suksesTambah = document.querySelector("#tambah-sukses")
+
+    if (suksesTambah.classList.contains('add')) {
+        clearInterval(suksesInterval)
+        suksesTambah.classList.remove('add')
+        suksesTambah.classList.add('add')
+        suksesInterval = setInterval(() => {
+            hit()
+        }, 1000);
+    } else {
+        suksesTambah.classList.add('add')
+        suksesInterval = setInterval(() => {
+            hit()
+        }, 1000);
+    }
+    
+    function hit() {
+        hitung--
+        if (hitung == 0) {
+            clearInterval(suksesInterval)
+            suksesTambah.classList.remove('add')
+        }
+        console.log('hitung', hitung)
+    }
+}
+
+
+
+
 
 function hapusItem(element){
     const ID = element.parentElement.getAttribute('data-id')
@@ -422,7 +456,7 @@ function order(){
     `
     const encode = encodeURI(dataWA)
     const linkWA = `https://wa.me/+6281354741823?text=${encode}`
-    window.location.replace(linkWA)
+    // window.open(linkWA)
     console.info(linkWA)
     console.info(dataWA)
 }
