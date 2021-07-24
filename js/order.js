@@ -30,13 +30,13 @@ const buketData = [
         tipe: "Buket Tipe 4",
         nama : "Bunga Mawar",
         img : "buket/buket.mawar.jpg",
-        deskripsi : "Buket Bunga Mawar, dengan Bunga Mawar Merah dan Putih dibungkus kertas corak ungu, gold dan p ink, dengan hiasan pita silver. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
+        deskripsi : "Buket Bunga Mawar, dengan Bunga Mawar Merah dan Putih dibungkus kertas corak ungu, gold dan pink, dengan hiasan pita silver. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
     },
     {
         ID :  "01005",
         tipe: "Buket Tipe 5",
-        nama : "Uang Rp 5000, 40 Lembar",
+        nama : "Uang Rp 5000",
         img : "buket/buket.uang5.jpg",
         deskripsi : "Buket Uang Rp 5000 Asli/Mainan #40 Lembar, dibungkus ketas pink dan coklat serta hiasan bunga merah dan pita silver merah. Isi dapat disesuaikan (harga dapat berubah tergantung isi)",
         harga : 50000
@@ -455,8 +455,8 @@ function order(){
     let dataWA = `Order Baru !! - ${new Date()}\n\n${nama} - ${telp}\n\n${orderan} Total : Rp. ${total}\n\nDeskripsi : ${deskripsi}\n\nPembayaran :\n${bayar[0]}, ${bayar[1]}
     `
     const encode = encodeURI(dataWA)
-    const linkWA = `https://wa.me/+6281354741823?text=${encode}`
-    // window.open(linkWA)
+    const linkWA = `https://wa.me/+6281248677156?text=${encode}`
     console.info(linkWA)
     console.info(dataWA)
+    location.href = linkWA
 }
