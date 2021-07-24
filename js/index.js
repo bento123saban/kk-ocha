@@ -14,25 +14,25 @@ window.addEventListener('scroll', function(e) {
 // 	}
 // 	prevScrollpos = currentScrollPos;
 // }
-// window.addEventListener('load', function(){
-// 	function snows(){
-// 		const animasi = document.querySelector('#animasi')
-// 		const snow = document.createElement('i')
-// 		snow.classList.add('fas')
-// 		snow.classList.add('fa-snowflake')
-// 		snow.style.left = Math.random() * window.innerWidth + 'px'
-// 		snow.style.animationDuration = Math.random() * 3 + 2 + 's'
-// 		snow.style.opacity = Math.random()
-// 		snow.style.fontSize = Math.random() * 10 + 10 + 'px'
+window.addEventListener('load', function(){
+	function snows(){
+		const animasi = document.querySelector('#animasi')
+		const snow = document.createElement('i')
+		snow.classList.add('fas')
+		snow.classList.add('fa-snowflake')
+		snow.style.left = Math.random() * window.innerWidth + 'px'
+		snow.style.animationDuration = Math.random() * 3 + 2 + 's'
+		snow.style.opacity = Math.random()
+		snow.style.fontSize = Math.random() * 10 + 10 + 'px'
 	
-// 		document.animasi.appendChild(snow)
+		animasi.appendChild(snow)
 	
-// 		setTimeout(() => {
-// 			snow.remove()
-// 		}, 5000)
+		setTimeout(() => {
+			snow.remove()
+		}, 5000)
 	
-// 	}
-// 	setInterval(() => {
-// 		snows()
-// 	}, 100);
-// })
+	}
+	setInterval(() => {
+		snows()
+	}, 100);
+})
