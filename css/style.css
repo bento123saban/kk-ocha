@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h5, button, a {
 body {
     padding: 0;
     margin: 0;
-    /* background: linear-gradient(45deg, #fff, rgb(201, 199, 199)); */
+    background: linear-gradient(to left bottom, #fff, rgb(201, 199, 199));
 }
 
 .animasi {
@@ -57,7 +57,7 @@ body {
   left: 0;
 }
 .fa-snowflake {
-  color: #16c8dc;
+  color: #fff;
   position: absolute;
   top: -20px;
   animation: fall linear forwards;
@@ -160,7 +160,10 @@ header p {
   font-size: 14px;
   text-align: center;
 }
-header a {
+header span {
+  font-size: 10px;
+}
+header a.header-button {
   padding: 7px 20px;
   background: linear-gradient(45deg, #FFD700, orange);
   margin: 5px auto;
@@ -170,6 +173,9 @@ header a {
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 5px;
+  z-index: 100;
+}
+header a.header-butt:active {
   box-shadow: 0 0 50px rgba(0,0,0,.5);
 }
 
@@ -437,6 +443,7 @@ header a {
   flex-direction: column;
   position: relative;
   background-color: rgba(0,0,0,.1);
+  backdrop-filter: blur(1px);
 }
 .order-box h1 {
   text-transform: uppercase;
